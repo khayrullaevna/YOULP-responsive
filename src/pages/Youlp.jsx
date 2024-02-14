@@ -1,7 +1,7 @@
-import React from 'react';
-import imgOne from '../img/yulp/yulp-1.jpg';
-import imgSecond from '../img/yulp/yulp-2.jpg';
-import imgThird from '../img/yulp/yulp-3.jpg';
+import React from "react";
+import imgOne from "../img/yulp/yulp-1.jpg";
+import imgSecond from "../img/yulp/yulp-2.jpg";
+import imgThird from "../img/yulp/yulp-3.jpg";
 
 export default function Youlp() {
   return (
@@ -21,14 +21,14 @@ export default function Youlp() {
               leadership, interpersonal, and community engagement skills.
             </p>
           </div>
-
           <div>
             <img src={imgOne} alt="about Young Leadership Program" />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 lg:gap-20 xl:gap-32 max-w-screen-xl mx-auto mt-10 md:mt-20">
-          <div>
+          {/* For desktop and above */}
+          <div className="hidden md:block">
             <img src={imgSecond} alt="Program Overview:" />
           </div>
 
@@ -48,21 +48,26 @@ export default function Youlp() {
               session, Soft skills, case studies or module tasks.
             </p>
           </div>
+
+          {/* For tablet and mobile */}
+          <div className="block md:hidden">
+            <img src={imgSecond} alt="Program Overview:" />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 lg:gap-20 xl:gap-32 max-w-screen-xl mx-auto mt-10 md:mt-20">
           <div>
             <h2 className="mb-4 text-2xl md:text-3xl font-medium">
-              Internship Programme
+              Internship Program
             </h2>
             <p className="text-lg md:text-xl">
-              The internship programme also includes leadership skills
-              development including debate and communications training. During
-              the programme, Interns have the opportunity to participate in
-              media training with seasoned professionals and contribute to a
-              formal public debate. They spend a weekend retreat exploring their
-              own leadership styles and developing personal and professional
-              skills for leading change with confidence.
+              The internship program also includes leadership skills development
+              including debate and communications training. During the program,
+              Interns have the opportunity to participate in media training with
+              seasoned professionals and contribute to a formal public debate.
+              They spend a weekend retreat exploring their own leadership styles
+              and developing personal and professional skills for leading change
+              with confidence.
             </p>
           </div>
 
@@ -77,4 +82,3 @@ export default function Youlp() {
     </div>
   );
 }
-
