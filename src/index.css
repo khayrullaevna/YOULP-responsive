@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: #343a40;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn-primary {
+  background-color: #5F73F1;
+  color: white;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: #dbe4ff;
+  color: #5F73F1;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
