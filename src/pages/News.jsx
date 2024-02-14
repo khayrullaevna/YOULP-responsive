@@ -1,7 +1,7 @@
-import React from 'react';
-import ImgFirst from '../img/news/news-1.jpg';
-import ImgSecond from '../img/news/news-2.jpg';
-import ImgThrid from '../img/news/news-3.jpg';
+import React from "react";
+import ImgFirst from "../img/news/news-1.jpg";
+import ImgSecond from "../img/news/news-2.jpg";
+import ImgThrid from "../img/news/news-3.jpg";
 
 export default function News() {
   return (
@@ -10,7 +10,11 @@ export default function News() {
       <div className="flex flex-col gap-[5vw] w-full max-w-[1400px] py-[5vw] md:py-[8vw] px-[5vw] m-auto">
         <div className="flex flex-col md:flex-row items-center gap-[5vw] mt-[8vw]">
           <div className="w-full md:w-[40%] h-[auto]">
-            <img src={ImgFirst} alt="image of the youlp members" className="w-full h-auto" />
+            <img
+              src={ImgFirst}
+              alt="image of the youlp members"
+              className="w-full h-auto"
+            />
           </div>
 
           <div className="w-full md:w-[60%]">
@@ -29,7 +33,11 @@ export default function News() {
 
         <div className="flex flex-col md:flex-row items-center gap-[5vw] mt-[8vw]">
           <div className="w-full md:w-[50%]">
-            <img src={ImgSecond} alt="image of the youlp lesson" className="w-full h-auto" />
+            <img
+              src={ImgSecond}
+              alt="image of the youlp lesson"
+              className="w-full h-auto"
+            />
           </div>
 
           <div className="w-full md:w-[50%]">
@@ -48,7 +56,11 @@ export default function News() {
 
         <div className="flex flex-col md:flex-row items-center gap-[5vw] mt-[8vw]">
           <div className="w-full md:w-[50%]">
-            <img src={ImgThrid} alt="youlp members image" className="w-full h-auto" />
+            <img
+              src={ImgThrid}
+              alt="youlp members image"
+              className="w-full h-auto"
+            />
           </div>
 
           <div className="w-full md:w-[50%] mb-[8vw]">
