@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Youlp from './pages/Youlp';
 import Ourintern from './pages/Ourintern';
 import News from './pages/News';

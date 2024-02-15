@@ -3,7 +3,7 @@ import Logo from "../img/logo-outbg.png";
 
 const Footer = () => {
   return (
-    <footer className="w-full xl:w-[100vw] py-[3vw] md:py-[5vw] px-[3vw] m-auto flex flex-col text-[#343a40] bg-[#f1f3f5]">
+    <footer id="footer" className="w-full xl:w-[100vw] py-[3vw] md:py-[5vw] px-[3vw] m-auto flex flex-col text-[#343a40] bg-[#f1f3f5]">
       <div className="flex flex-col sm:flex-col justify-center md:flex-col lg:flex-row xl:flex-row items-center">
         <a
           href="#main"
@@ -82,25 +82,33 @@ const Footer = () => {
           <ul className="flex gap-[20px] p-0 opacity-70">
             <li className="translate-y-[4px]">
               <a
-                href="https://t.me/yldpuzb"
+                href="https://t.me/youlpuz"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#343a40] text-[30px] hover:text-[#5F73F1]"
                 aria-label="direct to youlp telegram"
               >
                 <i className="fab fa-telegram"></i>
               </a>
             </li>
+
             <li className="translate-y-[4px]">
               <a
-                href="https://www.linkedin.com/company/yldpuz/"
+                href="https://www.linkedin.com/company/youlpuz/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#343a40] text-[30px] hover:text-[#5F73F1]"
                 aria-label="direct to youlp linkedin"
               >
                 <i className="fab fa-linkedin"></i>
               </a>
             </li>
+
             <li className="translate-y-[4px]">
               <a
                 href="https://www.instagram.com/youlp.uz/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#343a40] text-[30px] hover:text-[#5F73F1]"
                 aria-label="direct to youlp instagram"
               >
@@ -110,9 +118,11 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-
-      <p className="mt-4 text-center font-light">
-        © YouLP 2024 All rights reserved.
+      <p className="copyright mt-4 text-center font-light">
+        &copy; 2024 Young Leadership Program. All Rights Reserved. Developed by{" "}
+        <a href="https://innohub.uz/" className="copyright-link">
+          InnoHub
+        </a>
       </p>
     </footer>
   );
